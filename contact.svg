@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="196" viewBox="0 0 980 196" role="img" aria-label="Contact">
+  <style>
+    .mono { font-family: 'Courier New', Consolas, monospace; }
+    .sans { font-family: 'Arial Narrow', 'Segoe UI', Arial, sans-serif; font-weight: 700; }
+    .lime { fill: #b6ff2e; }
+    .dim { fill: #5f705f; }
+    .head { font-size: 15px; letter-spacing: 1.5px; }
+  </style>
+
+  <rect width="980" height="196" fill="#0a0d0a"/>
+  <path d="M0.5 0V195.5H979.5V0" stroke="#2c3a2c" fill="none"/>
+
+  <text x="24" y="36" class="sans lime head">CONTACT</text>
+  <rect x="24" y="46" width="932" height="1" fill="#2c3a2c"/>
+
+  <rect x="24" y="72" width="300" height="46" fill="#b6ff2e"/>
+  <text x="174" y="100" class="mono" font-size="13" font-weight="700" letter-spacing="1.5" text-anchor="middle" fill="#0a0d0a">OPEN GITHUB PROFILE ▸</text>
+  <text x="348" y="100" class="mono dim" font-size="13" letter-spacing="1">github.com/ASHTHRONE56-exe</text>
+
+  <rect x="24" y="148" width="932" height="2" class="lime"/>
+  <text x="490" y="176" class="mono dim" font-size="11" letter-spacing="2" text-anchor="middle">FILE RP-ASH // RECORDS DIVISION // END OF REPORT</text>
+</svg>

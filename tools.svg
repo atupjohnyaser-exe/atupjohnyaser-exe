@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="152" viewBox="0 0 980 152" role="img" aria-label="Tools on record">
+  <style>
+    .mono { font-family: 'Courier New', Consolas, monospace; }
+    .sans { font-family: 'Arial Narrow', 'Segoe UI', Arial, sans-serif; font-weight: 700; }
+    .lime { fill: #b6ff2e; }
+    .txt { fill: #eef3ee; }
+    .dim { fill: #5f705f; }
+    .head { font-size: 15px; letter-spacing: 1.5px; }
+  </style>
+
+  <rect width="980" height="152" fill="#0a0d0a"/>
+  <path d="M0.5 0V152M979.5 0V152" stroke="#2c3a2c" fill="none"/>
+
+  <text x="24" y="36" class="sans lime head">TOOLS ON RECORD</text>
+  <rect x="24" y="46" width="932" height="1" fill="#2c3a2c"/>
+
+  <g class="mono" text-anchor="middle">
+    <rect x="24"  y="72" width="122" height="56" fill="none" stroke="#2c3a2c"/>
+    <text x="85"  y="94"  class="dim" font-size="10" letter-spacing="1.5">LANGUAGE</text>
+    <text x="85"  y="115" class="txt" font-size="14" font-weight="700">PYTHON</text>
+
+    <rect x="159" y="72" width="122" height="56" fill="none" stroke="#2c3a2c"/>
+    <text x="220" y="94"  class="dim" font-size="10" letter-spacing="1.5">LANGUAGE</text>
+    <text x="220" y="115" class="txt" font-size="14" font-weight="700">JAVASCRIPT</text>
+
+    <rect x="294" y="72" width="122" height="56" fill="none" stroke="#2c3a2c"/>
+    <text x="355" y="94"  class="dim" font-size="10" letter-spacing="1.5">MARKUP</text>
+    <text x="355" y="115" class="txt" font-size="14" font-weight="700">HTML</text>
+
+    <rect x="429" y="72" width="122" height="56" fill="none" stroke="#2c3a2c"/>
+    <text x="490" y="94"  class="dim" font-size="10" letter-spacing="1.5">STYLE</text>
+    <text x="490" y="115" class="txt" font-size="14" font-weight="700">CSS</text>
+
+    <rect x="564" y="72" width="122" height="56" fill="none" stroke="#2c3a2c"/>
+    <text x="625" y="94"  class="dim" font-size="10" letter-spacing="1.5">VERSION</text>
+    <text x="625" y="115" class="txt" font-size="14" font-weight="700">GIT</text>
+
+    <rect x="699" y="72" width="122" height="56" fill="none" stroke="#2c3a2c"/>
+    <text x="760" y="94"  class="dim" font-size="10" letter-spacing="1.5">PLATFORM</text>
+    <text x="760" y="115" class="txt" font-size="14" font-weight="700">GITHUB</text>
+
+    <rect x="834" y="72" width="122" height="56" fill="none" stroke="#b6ff2e"/>
+    <text x="895" y="94"  class="dim" font-size="10" letter-spacing="1.5">EDITOR</text>
+    <text x="895" y="115" class="lime" font-size="14" font-weight="700">VS CODE</text>
+  </g>
+</svg>
