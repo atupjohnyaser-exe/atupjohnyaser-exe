@@ -112,7 +112,7 @@
     <text x="24"  y="244" class="mono dim label">NAME</text>
     <text x="24"  y="268" class="sans txt val">ASHTHRONE56-exe</text>
     <text x="264" y="244" class="mono dim label">ALIAS</text>
-    <text x="264" y="268" class="sans txt val">Ash</text>
+    <text x="264" y="268" class="sans txt val">Destro</text>
     <text x="504" y="244" class="mono dim label">ROLE</text>
     <text x="504" y="268" class="sans txt val">Developer</text>
     <text x="744" y="244" class="mono dim label">STATUS</text>
@@ -134,7 +134,7 @@
 
   <g class="rise" style="animation-delay:.6s">
     <text x="24" y="368" class="mono org label" font-weight="700">SUGGESTED RESPONSE</text>
-    <text x="24" y="392" class="sans txt val">Approach with a pull request. Coffee recommended.</text>
+    <text x="24" y="392" class="sans txt val">Approach with a pull request. Coffee with HIGH Caffeine Recommended.</text>
   </g>
 
   <g class="rise" style="animation-delay:.75s">
