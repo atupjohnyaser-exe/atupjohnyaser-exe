@@ -2,6 +2,7 @@
   Upload ALL of these files to the repo root:
   README.md, case-file.svg, tools.svg, activity.svg, contact.svg
   The repo name must match your GitHub username exactly.
+  The SVGs are animated (pure CSS, no scripts) and play automatically on GitHub.
 -->
 
 <div align="center">

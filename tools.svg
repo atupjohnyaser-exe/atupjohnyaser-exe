@@ -6,41 +6,95 @@
     .txt { fill: #eef3ee; }
     .dim { fill: #5f705f; }
     .head { font-size: 15px; letter-spacing: 1.5px; }
+
+    .box { animation: chase 5.6s ease-in-out infinite; }
+    @keyframes chase {
+      0%, 22%, 100% { stroke: #2c3a2c; fill: rgba(182, 255, 46, 0); }
+      8% { stroke: #b6ff2e; fill: rgba(182, 255, 46, 0.08); }
+    }
+    .blip { animation: blip 2s ease-in-out infinite; }
+    @keyframes blip { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+    .sweep { animation: scan 6s linear infinite; }
+    @keyframes scan { from { transform: translateY(-70px); } to { transform: translateY(152px); } }
+    .shine { animation: shine 5s linear infinite; }
+    @keyframes shine { from { transform: translateX(-160px); } to { transform: translateX(1000px); } }
+
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
   </style>
 
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#b6ff2e" stroke-opacity="0.045"/>
+    </pattern>
+    <pattern id="lines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#b6ff2e" fill-opacity="0.035"/>
+    </pattern>
+    <linearGradient id="sweepg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b6ff2e" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#b6ff2e" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#b6ff2e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="shineg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eaffb0" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#eaffb0" stop-opacity="1"/>
+      <stop offset="1" stop-color="#eaffb0" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="rail"><rect x="24" y="0" width="932" height="152"/></clipPath>
+  </defs>
+
   <rect width="980" height="152" fill="#0a0d0a"/>
+  <rect width="980" height="152" fill="url(#grid)"/>
+  <rect width="980" height="152" fill="url(#lines)"/>
   <path d="M0.5 0V152M979.5 0V152" stroke="#2c3a2c" fill="none"/>
 
   <text x="24" y="36" class="sans lime head">TOOLS ON RECORD</text>
+  <circle class="blip" cx="818" cy="32.5" r="2.5" fill="#b6ff2e"/>
+  <text x="956" y="36" class="mono dim" font-size="10" letter-spacing="1.5" text-anchor="end" textLength="128" lengthAdjust="spacing">07 MODULES LOADED</text>
   <rect x="24" y="46" width="932" height="1" fill="#2c3a2c"/>
 
   <g class="mono" text-anchor="middle">
-    <rect x="24"  y="72" width="122" height="56" fill="none" stroke="#2c3a2c"/>
+    <rect class="box" x="24"  y="72" width="122" height="56" fill="none" stroke="#2c3a2c" style="animation-delay:0s"/>
+    <circle class="blip" cx="36" cy="84" r="2" fill="#b6ff2e" style="animation-delay:0s"/>
     <text x="85"  y="94"  class="dim" font-size="10" letter-spacing="1.5">LANGUAGE</text>
     <text x="85"  y="115" class="txt" font-size="14" font-weight="700">PYTHON</text>
 
-    <rect x="159" y="72" width="122" height="56" fill="none" stroke="#2c3a2c"/>
+    <rect class="box" x="159" y="72" width="122" height="56" fill="none" stroke="#2c3a2c" style="animation-delay:.55s"/>
+    <circle class="blip" cx="171" cy="84" r="2" fill="#b6ff2e" style="animation-delay:.3s"/>
     <text x="220" y="94"  class="dim" font-size="10" letter-spacing="1.5">LANGUAGE</text>
     <text x="220" y="115" class="txt" font-size="14" font-weight="700">JAVASCRIPT</text>
 
-    <rect x="294" y="72" width="122" height="56" fill="none" stroke="#2c3a2c"/>
+    <rect class="box" x="294" y="72" width="122" height="56" fill="none" stroke="#2c3a2c" style="animation-delay:1.1s"/>
+    <circle class="blip" cx="306" cy="84" r="2" fill="#b6ff2e" style="animation-delay:.6s"/>
     <text x="355" y="94"  class="dim" font-size="10" letter-spacing="1.5">MARKUP</text>
     <text x="355" y="115" class="txt" font-size="14" font-weight="700">HTML</text>
 
-    <rect x="429" y="72" width="122" height="56" fill="none" stroke="#2c3a2c"/>
+    <rect class="box" x="429" y="72" width="122" height="56" fill="none" stroke="#2c3a2c" style="animation-delay:1.65s"/>
+    <circle class="blip" cx="441" cy="84" r="2" fill="#b6ff2e" style="animation-delay:.9s"/>
     <text x="490" y="94"  class="dim" font-size="10" letter-spacing="1.5">STYLE</text>
     <text x="490" y="115" class="txt" font-size="14" font-weight="700">CSS</text>
 
-    <rect x="564" y="72" width="122" height="56" fill="none" stroke="#2c3a2c"/>
+    <rect class="box" x="564" y="72" width="122" height="56" fill="none" stroke="#2c3a2c" style="animation-delay:2.2s"/>
+    <circle class="blip" cx="576" cy="84" r="2" fill="#b6ff2e" style="animation-delay:1.2s"/>
     <text x="625" y="94"  class="dim" font-size="10" letter-spacing="1.5">VERSION</text>
     <text x="625" y="115" class="txt" font-size="14" font-weight="700">GIT</text>
 
-    <rect x="699" y="72" width="122" height="56" fill="none" stroke="#2c3a2c"/>
+    <rect class="box" x="699" y="72" width="122" height="56" fill="none" stroke="#2c3a2c" style="animation-delay:2.75s"/>
+    <circle class="blip" cx="711" cy="84" r="2" fill="#b6ff2e" style="animation-delay:1.5s"/>
     <text x="760" y="94"  class="dim" font-size="10" letter-spacing="1.5">PLATFORM</text>
     <text x="760" y="115" class="txt" font-size="14" font-weight="700">GITHUB</text>
 
-    <rect x="834" y="72" width="122" height="56" fill="none" stroke="#b6ff2e"/>
+    <rect class="box" x="834" y="72" width="122" height="56" fill="none" stroke="#2c3a2c" style="animation-delay:3.3s"/>
+    <circle class="blip" cx="846" cy="84" r="2" fill="#b6ff2e" style="animation-delay:1.8s"/>
     <text x="895" y="94"  class="dim" font-size="10" letter-spacing="1.5">EDITOR</text>
-    <text x="895" y="115" class="lime" font-size="14" font-weight="700">VS CODE</text>
+    <text x="895" y="115" class="txt" font-size="14" font-weight="700">VS CODE</text>
   </g>
+
+  <g clip-path="url(#rail)">
+    <rect class="shine" x="0" y="44" width="160" height="4" fill="url(#shineg)" opacity="0.6" style="animation-delay:-2s"/>
+  </g>
+  <rect class="sweep" x="0" y="0" width="980" height="70" fill="url(#sweepg)" style="animation-delay:-2s"/>
 </svg>
